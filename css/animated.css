@@ -1,0 +1,52 @@
+.box {
+   background:linear-gradient(to bottom, red, white);
+   height: 200px;
+   width: 200px;
+   left:70%;
+   top:20%;
+   position:absolute; /* the absolute is very important for the animation to work */
+   /* animation begins now !important */
+}
+
+.number_1 {
+    background:linear-gradient(to bottom, red, white);
+    animation: an_number_1 5s linear 10;
+}
+
+.number_2 {
+    background:linear-gradient(to bottom, green, white);
+    animation: an_number_2 5s linear 10;
+}
+
+.ball {
+   background:linear-gradient(to bottom, blue, white);
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   /*left:70%;*/
+   /*top:20%;*/
+   position:absolute;
+   animation: an_bouncingball 5s linear 10;
+}
+
+
+@keyframes an_number_1 {
+    000% { left:80%; top:50% ; transform:rotate(180deg); }
+    050% { left:00%; top:75% ; }
+    100% { left:80%; top:50% ; }
+}
+
+@keyframes an_number_2 {
+    000% { left:00%; top:50% ; }
+    050% { left:80%; top:75% ; }
+    100% { left:00%; top:50% ; }
+}
+
+@keyframes an_bouncingball {
+    000% { left:80%; top:45% ; }
+    025% { left:50%; top:10% ; }
+    050% { left:05%; top:70% ; }
+    075% { left:50%; top:10% ; }
+    100% { left:80%; top:45% ; }
+}
+

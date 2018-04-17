@@ -1,3 +1,8 @@
+body {
+    background:radial-gradient(rgba(0,255,0,1), rgba(0,255,0,0)); /* dégradé radial-gradient & linear-gradient // Transparence : rgba : last digit: transparent*/
+    r
+    /*height: 100vh;/* /* 100% de la fenetre */
+}
 .box {
     background-color: red;
     height:100px;
@@ -11,8 +16,10 @@
     transition-delay: 2s;
     transition: all 2s ease-in-out;
 }
-.rotate:hover {
+.rotate: { /* same class, one for constant properties, and one for hovering*/
     background-color: blue;
+}
+.rotate:hover {
     transform: rotate(+30deg);
 }
 .skew:hover {
