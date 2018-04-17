@@ -2,26 +2,36 @@
     background-color: red;
     height:100px;
     width:100px;
-    margin-bottom: 200px;
+    margin: 100px;
+    box-sizing: border-box;
     border: 2px solid black;
     border-radius: 10px;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-delay: 2s;
+    transition: all 2s ease-in-out;
 }
-.rotate {
+.rotate:hover {
+    background-color: blue;
     transform: rotate(+30deg);
 }
-.skew {
+.skew:hover {
+    background-color: yellow;
     transform: skew(5deg, 10deg);
 }
-.scale {
+.scale:hover {
+    background-color: orange;
     transform: scale(1,2); /* Can be only on X or Y or XY, depending of our setting */
 }
-.multiple { /* You can apply multiple transformation at the same time */
+.multiple:hover { /* You can apply multiple transformation at the same time */
+    background-color: grey;
     transform: rotate(+30deg) skew(5deg, 10deg) scale(2,2);
 }
-.circle {
+.circle:hover {
+    background-color: black;
     border-radius:50%;
     text-align: center;
 }
-.perspective {
+.perspective:hover {
     transform: perspective(100px) rotateX(+30deg);
 }

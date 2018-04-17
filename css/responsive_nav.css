@@ -17,6 +17,9 @@ nav ul li {
 
 nav ul li:hover {
     background-color: #555; /* change the color when the mouse is hoovering the element */
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    /*transition-delay: 1s;*/
 }
 
 nav ul {
