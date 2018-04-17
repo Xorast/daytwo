@@ -1,0 +1,27 @@
+.box {
+    background-color: red;
+    height:100px;
+    width:100px;
+    margin-bottom: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.rotate {
+    transform: rotate(+30deg);
+}
+.skew {
+    transform: skew(5deg, 10deg);
+}
+.scale {
+    transform: scale(1,2); /* Can be only on X or Y or XY, depending of our setting */
+}
+.multiple { /* You can apply multiple transformation at the same time */
+    transform: rotate(+30deg) skew(5deg, 10deg) scale(2,2);
+}
+.circle {
+    border-radius:50%;
+    text-align: center;
+}
+.perspective {
+    transform: perspective(100px) rotateX(+30deg);
+}
