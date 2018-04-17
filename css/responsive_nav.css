@@ -1,0 +1,45 @@
+/* We design it for mobile first, desktop then*/
+
+nav ul li a {
+    display: block; /* more compact */
+    color:white;
+    font-family: sans-serif;
+    text-decoration: none; /* underline by default, we don't want that */
+}
+
+nav ul li {
+    box-sizing: border-box;
+    border-bottom: 1px solid #444;
+    background-color: #1D2026;
+    font-size: 30px;
+    padding: 10px 5px;
+}
+
+nav ul li:hover {
+    background-color: #555; /* change the color when the mouse is hoovering the element */
+}
+
+nav ul {
+    list-style: none; /* suppress the bullets */
+    text-align: center;
+}
+
+body {
+    background-color:#292E37;
+}
+
+@media (min-width: 768px) {
+    nav {
+        font-size:0; /* suppress the margin by default in the css default - margin between the boxes. CSS hack, doesn't make sense */
+    }
+    nav ul li {
+        display:inline-block;
+        font-size: 20px;
+        width: 120px;
+    }
+    nav ul {
+        background-color:#1D2026; /* Makes the whole nav bar in the same color */
+        /*box-sizing: border-box;*/
+        /*border-bottom: 1px solid #444;*/
+    }
+}
